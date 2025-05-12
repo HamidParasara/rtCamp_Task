@@ -10,6 +10,10 @@ on:
     - cron: '30 13 * * *'
   workflow_dispatch: # also allows manual triggering from GitHub UI
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   run-tests:
     runs-on: ubuntu-latest
